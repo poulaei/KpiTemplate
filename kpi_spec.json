@@ -1,0 +1,19 @@
+{
+  "data": {
+    "revenue": [120000, 150000, 130000, 175000],
+    "cost": [70000, 80000, 75000, 90000],
+    "orders": [1200, 1400, 1320, 1600],
+    "customers": [350, 380, 360, 420]
+  },
+  "kpis": [
+    {"name": "total_revenue", "formula": "sum(revenue)"},
+    {"name": "total_cost", "formula": "sum(cost)"},
+    {"name": "profit", "formula": "total_revenue - total_cost"},
+    {"name": "avg_order_value", "formula": "total_revenue / sum(orders)"},
+    {"name": "orders_per_customer", "formula": "sum(orders) / sum(customers)"}
+  ],
+  "dashboard": {
+    "title": "Sales KPI Dashboard",
+    "chart": "bar"
+  }
+}
